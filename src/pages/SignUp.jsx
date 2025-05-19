@@ -25,12 +25,6 @@ const SignUp = () => {
     const { email, password, ...restFormData } = Object.fromEntries(
       formData.entries()
     );
-
-    // ami email keo pathai delam
-    // const userProfile = {
-    //   email,
-    //   ...rest,
-    // };
     // console.log(email, password, userProfile);
 
     createUser(email, password)
@@ -97,7 +91,10 @@ const SignUp = () => {
         </h2>
         <p className="text-sm text-center dark:text-gray-600">
           Already have an account?{' '}
-          <Link to='/sign-in' className="focus:underline hover:underline text-blue-600">
+          <Link
+            to="/sign-in"
+            className="focus:underline hover:underline text-blue-600"
+          >
             Sign in here
           </Link>
         </p>
@@ -165,6 +162,8 @@ const SignUp = () => {
                 name="phone"
                 placeholder="Phone Number"
                 className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-violet-600"
+                // min="10"
+                // max="11"
               />
             </div>
 
@@ -181,9 +180,9 @@ const SignUp = () => {
             </div>
 
             <div className="space-y-2">
-                <label htmlFor="password" className="text-sm">
-                  Password
-                </label>
+              <label htmlFor="password" className="text-sm">
+                Password
+              </label>
               <input
                 type="password"
                 name="password"
