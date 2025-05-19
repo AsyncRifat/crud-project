@@ -1,0 +1,2 @@
+1.project > build > hosting
+2.npm i -g firebase-tools

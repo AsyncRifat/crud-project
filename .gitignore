@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-firebase_deploy
+firebase_deploy.txt
