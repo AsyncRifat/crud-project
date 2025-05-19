@@ -15,14 +15,14 @@ const AuthProvider = ({ children }) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  // google signIn
-  const googleSignIn = () => {
+  // google signUp
+  const googleSignUp = () => {
     return signInWithPopup(auth, provider);
   };
 
   const userInfo = {
     createUser,
-    googleSignIn,
+    googleSignUp,
   };
 
   return <AuthContext value={userInfo}>{children}</AuthContext>;

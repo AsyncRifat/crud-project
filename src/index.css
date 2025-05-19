@@ -4,6 +4,10 @@
 @plugin "daisyui" {
   themes: light --default;
 }
+a.active {
+  color: teal;
+  text-decoration: underline;
+}
 
 .rancho {
   font-family: 'Rancho', cursive;

@@ -7,6 +7,7 @@ import Loading from '../components/loader/Loading';
 import CoffeeDetails from '../components/CoffeeDetails';
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
+import Users from '../components/Users';
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,8 @@ export const router = createBrowserRouter([
           fetch(`http://localhost:3000/coffees/${params.id}`),
         Component: UpdateCoffee,
       },
+
+      // users controlled
       {
         path: 'sign-in',
         Component: SignIn,
@@ -44,6 +47,12 @@ export const router = createBrowserRouter([
       {
         path: 'sign-up',
         Component: SignUp,
+      },
+      {
+        path: 'users',
+        HydrateFallback: Loading,
+        loader: () => fetch('http://localhost:3000/users'),
+        Component: Users,
       },
     ],
   },
