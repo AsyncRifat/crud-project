@@ -1,2 +1,17 @@
-1.project > build > hosting
-2.npm i -g firebase-tools
+****** client side deploy ******
+1: project > build > hosting
+2: npm i -g firebase-tools
+3: firebase login
+4: firebase init
+4.1: Do you want to proceed? :- y
+4.2: Hosting :configure.... [select for on keyboard "space bar key"]
+4.3: Existing project [find my project name and select this project]
+4.4: what is your public directory? : write name "dist"
+4.5: single page rewrite: y
+4.6: github build automatic: n
+
+For every time you want to deploy
+5.npm run build
+6.firebase deploy (please collect hosting URL)
+
+URL: https://coffee-store-app-8fbd3.web.app

@@ -42,7 +42,7 @@ const SignUp = () => {
         };
 
         // send user info in db
-        fetch('http://localhost:3000/users', {
+        fetch('https://coffee-store-server-mu-mocha.vercel.app/users', {
           method: 'POST',
           headers: {
             'content-type': 'application/json',
